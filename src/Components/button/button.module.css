@@ -20,7 +20,7 @@
 
    
 }
-.button:focus,
+.button:hover,
 .button:focus-visible {
     border: none;
 }
