@@ -6,6 +6,10 @@
     padding: 3rem;
 }
 
+.Mainpage img {
+    margin-bottom: 4rem;
+}
+
 .Mainpage :is(h2){
     font-family: 'Helvetica Neue', sans-serif;
     font-weight: 600;
