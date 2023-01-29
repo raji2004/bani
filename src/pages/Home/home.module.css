@@ -32,7 +32,7 @@
     height: 520px;
 }
 .Navbar::-webkit-scrollbar { 
-    display: none;  /* Safari and Chrome */
+    display: none; /* Safari and Chrome */
 }
 .main{
     display: flex;

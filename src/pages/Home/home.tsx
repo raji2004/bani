@@ -56,7 +56,7 @@ export const Home: React.FC = () => {
                         </ul>
                     </div>
                 </div>
-                <div></div>
+                <div className={styles.main}></div>
                 <div></div>
             </div>
         </div>
