@@ -26,6 +26,7 @@
    padding: 1.5rem;
    padding-bottom: 0;
    overflow-y: scroll;
+   overflow-x: hidden;
     -ms-overflow-style: none;  /* IE and Edge */
     scrollbar-width: none; 
     height: 520px;
@@ -55,7 +56,10 @@
 }
 .last{
     margin-top: 5rem;
-    width: 100%;
-    /* border-top: 1px solid #65717c11; */
+    margin-left: -1.5rem;
+  
+    width: 198px;
+    padding:1.5rem ;
+    border-top: 1px solid #65717c11;
   
 }
