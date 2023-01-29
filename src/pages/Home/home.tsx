@@ -17,6 +17,8 @@ import audit from "../../assets/audit.svg"
 import plus from "../../assets/plus.svg"
 import square from "../../assets/box.svg"
 import acc from "../../assets/acc.svg"
+import minfo from "../../assets/minfo.svg"
+import manage from '../../assets/manage.svg'
 import { Button } from '../../Components'
 
 export const Home: React.FC = () => {
@@ -62,7 +64,7 @@ export const Home: React.FC = () => {
                 </div>
                 <div className={styles.balance}>
                     <div className={styles.dash}>
-                        <h2 style={{fontSize:20}}>Virtual Account Dashboard</h2>
+                        <h2 style={{ fontSize: 20 }}>Virtual Account Dashboard</h2>
                         <div className={styles.btn}>
                             <Button style={{}} >
 
@@ -71,11 +73,11 @@ export const Home: React.FC = () => {
                                 <p>Create new Branch</p>
 
                             </Button>
-                            <Button style={{border:'none',backgroundColor:' #5444F2',color:'#fff'}} >
+                            <Button style={{ border: 'none', backgroundColor: ' #5444F2', color: '#fff' }} >
 
-                               <img src={plus} alt="" />
+                                <img src={plus} alt="" />
 
-                                <p style={{fontSize:14}}>Create Virtual Account</p>
+                                <p style={{ fontSize: 14 }}>Create Virtual Account</p>
 
                             </Button>
 
@@ -83,8 +85,25 @@ export const Home: React.FC = () => {
                     </div>
                     <div className={styles.myinfo}>
                         <div className={styles.acc}>
-                         <img src={acc} alt="" style={{width:'100%'}}/>
-                         
+                            <img src={acc} alt="" style={{ width: '100%' }} />
+
+                            <div className={styles.minfo}>
+                                <img src={minfo} alt="" style={{ width: '100%' }} />
+                                <div className={styles.title}>
+                                    <h4>Lekki ii</h4>
+
+                                    <img src={manage} alt="" style={{ width: '14%' }} />
+                                </div>
+                                <div className={styles.td}>
+                                    <p>Bank Name</p>
+                                    <p>Virtual Account</p>
+                                    <p>Total inflow</p>
+                                </div>
+                                {/* turn to components */}
+                                <div>
+                                  <img src="" alt="" />
+                                </div>
+                            </div>
                         </div>
                         <div>dd</div>
                     </div>

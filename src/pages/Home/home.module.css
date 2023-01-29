@@ -106,3 +106,27 @@
 .acc{
     width: 60%;
 }
+.minfo{
+    width:100%;
+    background-color: #fff;
+    border-radius: 8px;
+    padding: 1rem;
+    margin-top: 1rem;
+}
+.title{
+    font-size: .8rem;
+    font-weight: 500;
+   margin-block: .9rem;
+   display: flex;
+   justify-content: space-between;
+    align-items: center;
+}
+.td{
+    font-size: .8rem;
+    font-weight: 500;
+   margin-top: .5rem;
+   display: flex;
+   justify-content: space-around;
+    align-items: center;
+    color: #65717C;
+}
