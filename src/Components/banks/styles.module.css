@@ -1,0 +1,26 @@
+.info {
+    border-top: 1px solid #65717c11;
+    display: flex;
+    align-items: center;
+    padding: 0 0.9rem;
+}
+
+.info :is(div){
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin: 10px 0;
+}
+
+.active {
+    background-color: #f5f6fab3;
+    position: relative;
+}
+
+.indicator {
+    width: 4px;
+    height: 100%;
+    background: var(--primary);
+    position: absolute;
+    left: 0;
+}

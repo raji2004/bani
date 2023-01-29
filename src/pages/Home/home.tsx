@@ -5,10 +5,13 @@ import profile from '../../assets/profile.svg'
 import acc from "../../assets/acc.svg"
 import minfo from "../../assets/minfo.svg"
 import manage from '../../assets/manage.svg'
-import {  BankInfo, Dashboard, Nav } from '../../Components'
+import {  BankInfo, Dashboard, Nav } from '../../Components';
+import { Banks } from './banks'
+import { useId, useState } from 'react'
 
 export const Home: React.FC = () => {
-
+    const [activeId, setActiveId] = useState<string>('')
+    const [activeBank, setActiveBank] = useState<any>(undefined)
 
     return (
         <div className={styles.container}>
@@ -30,22 +33,56 @@ export const Home: React.FC = () => {
                             <div className={styles.minfo}>
                                 <img src={minfo} alt="" style={{ width: '100%' }} />
                                 <div className={styles.title}>
-                                    <h4>Lekki ii</h4>
+                                    <h4>Lekki II</h4>
 
                                     <img src={manage} alt="" style={{ width: '14%' }} />
                                 </div>
                                 <div className={styles.td}>
                                     <p style={{ marginLeft: -77 }}>Bank Name</p>
                                     <p style={{ marginLeft: 10 }}>Virtual Account</p>
-                                    <p>Total inflow</p>
+                                    <p>Total Inflow</p>
                                 </div>
                                 {/* turn to components */}
-                                <BankInfo/>
-                                <BankInfo/>
-                                <BankInfo/>
+                                {
+                                    Banks.map(bank => {
+                                        const id = useId();
+                                        return(
+                                            <BankInfo
+                                                key={id}
+                                                onClick={() => setActiveBank(bank)}
+                                                active={activeBank === bank ? true : false}
+                                                bankName={bank.name}
+                                                bankLogo={bank.bankLogo}
+                                                bankLocation={bank.bankLocation}
+                                            />
+                                        )
+                                    })
+                                }
                             </div>
                         </div>
-                        <div>dd</div>
+                        {
+                            !activeBank ? null :
+                            <div className={styles.rightContainer}>
+                                <table>
+                                    <thead>
+                                        <td>Transaction Details</td>
+                                        <td>Amount</td>
+                                        <td>Date</td>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>Olaoluwa S.</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Olaoluwa S.</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Olaoluwa S.</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        }
                     </div>
                 </div>
 

@@ -22,7 +22,7 @@
 
 .Navbar {
     z-index: 1;
-    width: 18%;
+    width: 15%;
     background-color: #fff;
     display: flex;
     flex-direction: column;
@@ -134,13 +134,4 @@
     justify-content: space-around;
     align-items: center;
     color: #65717C;
-}
-
-.info {
-    display: flex;
-    align-items: center;
-    margin-top: .5rem;
-    gap: 1rem;
-    border-top: 1px solid #65717c11;
-    padding-top: .6rem;
 }

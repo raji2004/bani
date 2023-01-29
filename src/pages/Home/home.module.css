@@ -1,5 +1,4 @@
 .container {
-
     width: 100%;
 
 }
@@ -129,7 +128,7 @@
 .td {
     font-size: .8rem;
     font-weight: 500;
-    margin-top: .5rem;
+    margin: .5rem 0;
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -143,4 +142,10 @@
     gap: 1rem;
     border-top: 1px solid #65717c11;
     padding-top: .6rem;
+}
+
+.rightContainer {
+    width: auto;
+    border-radius: 8px;
+    background: #fff;
 }
