@@ -1,6 +1,9 @@
+:root {
+    --primary: #5444F2;
+}
+
 body {
     background-color: #F5F6FA;
     margin: 0;
-  
 }
 

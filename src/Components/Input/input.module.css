@@ -1,0 +1,36 @@
+.inputContainer {
+    margin: 10px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.inputContainer :is(label){
+    font-size: 14px;
+    color: #65717C;
+}
+
+.inputContainer :is(div){
+    display: inline-flex;
+    justify-content: space-between;
+}
+
+.helperText {
+    color: var(--primary);
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.inputContainer :is(input){
+    width: 100%;
+    height: 44px;
+    border-radius: 8px;
+    border: 0.5px solid #e1e1e1;
+    background-color: #fff;
+    padding: 10px;
+    margin: 8px 0;
+}
+
+.inputContainer input::placeholder{
+    color: #c1c1c150;
+}
