@@ -1,0 +1,61 @@
+.container {
+
+    width: 100%;
+
+}
+.Nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    background-color: #fff;
+    box-shadow: 1px 2px 3px #e6e6e6;
+    height: 4.8rem;
+}
+.profile{
+    display: flex;
+    gap: 1.2rem;
+}
+.Navbar{
+    z-index: 1;
+    width: 200px;
+    background-color: #fff;
+   display: flex;
+   flex-direction: column;
+   padding: 1.5rem;
+   padding-bottom: 0;
+   overflow-y: scroll;
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none; 
+    height: 520px;
+}
+.Navbar::-webkit-scrollbar { 
+    display: none;  /* Safari and Chrome */
+}
+.main{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    overflow: hidden;
+   
+}
+.ul li{
+    list-style: none;
+    margin-bottom: 1rem;
+    font-size: 1rem;
+    font-weight: 500;
+    color: #65717C;
+    cursor: pointer;
+}
+.head{
+    margin-block: 1rem;
+    font-size: .7rem;
+}
+.last{
+    margin-top: 5rem;
+    width: 100%;
+    /* border-top: 1px solid #65717c11; */
+  
+}

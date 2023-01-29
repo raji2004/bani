@@ -1,0 +1,15 @@
+.Mainpage{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding: 3rem;
+}
+.Login{
+    background-color: #fff;
+    width: 26.6rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: .5rem;
+}
