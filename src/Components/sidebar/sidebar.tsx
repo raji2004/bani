@@ -1,5 +1,6 @@
 import styles from "./sidebar.module.css";
 import GTLogo from "../../assets/gt.svg";
+import { Transaction } from "../transaction/transaction";
 import RightArrow from "../../assets/rightCaret.svg";
 import FormatSquare from "../../assets/format-square.svg";
 
@@ -163,6 +164,68 @@ export const Sidebar: React.FC = () => {
         </div>
       </div>
       <hr style={{ marginTop: "5%", width: "100%" }} />
+      <div className={styles.transactions_header}>
+        <span
+          style={{
+            color: "#65717C",
+            fontSize: "0.87em",
+          }}
+        >
+          Transaction Details
+        </span>
+        <span
+          style={{
+            color: "#65717C",
+            fontSize: "0.87em",
+          }}
+        >
+          Amount
+        </span>
+        <span
+          style={{
+            color: "#65717C",
+            fontSize: "0.87em",
+            marginLeft: "5%",
+          }}
+        >
+          Date
+        </span>
+      </div>
+      <Transaction
+        name="Olaoluwa S."
+        amount="6,720.00"
+        day="Today"
+        month=""
+        time="8mins ago"
+      />
+      <Transaction
+        name="Olaoluwa S."
+        amount="6,720.00"
+        day="13th"
+        month="Aug"
+        time="3:15PM"
+      />
+      <Transaction
+        name="Olaoluwa S."
+        amount="10,720.00"
+        day="13th"
+        month="Aug"
+        time="3:15PM"
+      />
+      <Transaction
+        name="Olaoluwa S."
+        amount="6,720.00"
+        day="13th"
+        month="Aug"
+        time="3:15PM"
+      />
+      <Transaction
+        name="Olaoluwa S."
+        amount="6,720.00"
+        day="13th"
+        month="Aug"
+        time="3:15PM"
+      />
     </div>
   );
 };

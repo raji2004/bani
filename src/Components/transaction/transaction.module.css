@@ -1,0 +1,7 @@
+.transaction {
+  display: grid;
+  grid-template-columns: 35% 15% 35%;
+  gap: 5%;
+  margin-top: 5%;
+  margin-bottom: 5%;
+}
