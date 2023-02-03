@@ -20,7 +20,7 @@ export const Banks = [
         name: "Providus Bank PLC",
         bankLogo: Providus,
         bankLocation: "Lekki II",
-        color:'#fff'
+        color:'#FFFFF9'
     },
     {
         name: "First Bank of Nigeria",
