@@ -13,6 +13,7 @@ import { useId, useState } from "react";
 export const Home: React.FC = () => {
   const [activeId, setActiveId] = useState<string>("");
   const [activeBank, setActiveBank] = useState<any>(undefined);
+  console.log(activeBank)
 
   return (
     <div className={styles.container}>
@@ -59,29 +60,8 @@ export const Home: React.FC = () => {
                 })}
               </div>
             </div>
-            {!activeBank ? null : (
-              <div className={styles.rightContainer}>
-                <table>
-                  <thead>
-                    <td>Transaction Details</td>
-                    <td>Amount</td>
-                    <td>Date</td>
-                  </thead>
-                  <tbody>
-                    <tr>
-                      <td>Olaoluwa S.</td>
-                    </tr>
-                    <tr>
-                      <td>Olaoluwa S.</td>
-                    </tr>
-                    <tr>
-                      <td>Olaoluwa S.</td>
-                    </tr>
-                  </tbody>
-                </table>
-              </div>
-            )}
-            <Sidebar />
+         
+            <Sidebar bank={activeBank} />
           </div>
         </div>
       </div>

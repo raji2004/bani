@@ -4,7 +4,12 @@ import { Transaction } from "../transaction/transaction";
 import RightArrow from "../../assets/rightCaret.svg";
 import FormatSquare from "../../assets/format-square.svg";
 
-export const Sidebar: React.FC = () => {
+interface BankProps {
+  bank: any;
+
+}
+
+export const Sidebar: React.FC<BankProps> = ({ bank }) => {
   const d = new Date();
   let day = d.getDate();
   let month = d.getMonth();
@@ -67,13 +72,15 @@ export const Sidebar: React.FC = () => {
       console.error("Error");
       break;
   }
+  const logo = bank?bank.bankLogo:GTLogo
+  const name = bank?bank.name:"Guarranty Trust Bank"
   return (
     <div className={styles.sidebar}>
       <div className={styles.activity}>
         <span>
           Activity Feed <i> - </i>{" "}
           <small style={{ color: "#65717C", fontSize: "0.87em" }}>
-            GT Bank
+           {bank? bank.name : "GT Bank"} 
           </small>
         </span>
 
@@ -86,7 +93,7 @@ export const Sidebar: React.FC = () => {
           </li>
         </span>
       </div>
-      <div id={styles.banner}></div>
+     {bank?<div id={styles.banner} style={{background:`${bank.color}`}}></div>:<div id={styles.banner}></div>} 
       <div className={styles.header}>
         <div>
           <img
@@ -95,13 +102,13 @@ export const Sidebar: React.FC = () => {
               width: "3.25em",
               marginTop: "-1.3125em",
             }}
-            src={GTLogo}
+            src={logo}
             alt=""
           />
         </div>
         <div className={styles.account_header}>
           <div>
-            <div>Guaranty Trust Bank</div>
+            <div>{name}</div>
             <div style={{ color: "#65717C" }}>209630**83</div>
           </div>
           <div>

@@ -7,22 +7,26 @@ export const Banks = [
     {
         name: "Polaris Bank Limited",
         bankLogo: Polaris,
-        bankLocation: "Ikeja"
+        bankLocation: "Ikeja",
+        color:'#6C0BA9'
     },
     {
         name: "Guarantee Trust Holding",
         bankLogo: GTBank,
-        bankLocation: "Lekki II"
+        bankLocation: "Lekki II",
+        color:'#ffede3'
     },
     {
         name: "Providus Bank PLC",
         bankLogo: Providus,
-        bankLocation: "Lekki II"
+        bankLocation: "Lekki II",
+        color:'#fff'
     },
     {
         name: "First Bank of Nigeria",
         bankLogo: FirstBank,
-        bankLocation: "Abuja"
+        bankLocation: "Abuja",
+        color:'#003B65'
     },
 
 
